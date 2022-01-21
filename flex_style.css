@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: #7b00a9;
+}
+
+body {
+  background-color: #d1d1d1;
+  color: #7b00a9;
+  font-family: 'Oswald', sans-serif;
+  padding: 15px;
+  padding-top: 150px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #d1d1d1;
+}
+
+button {
+  color: #7b00a9;
+  background-color: #d1d1d1;
+  border: 2px solid #7b00a9;
+  border-radius: 40px;
+  padding: 25px 50px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #d1d1d1;
+}
+
+nav a {
+  width: 200px;
+  margin: auto;
+  color: #7b00a9;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+}
+
+#insta,
+#email {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.social {
+  height: 100%;
+  float: left;
+  display: flex;
+  width: 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 25px;
+}
+
+#social-container {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  float: left;
+}
+
+/* FONTS */
+.lt-font {
+  font-weight: 300;
+  padding-top: 0.5em;
+}
+
+.lg-font {
+  font-family: 'Cormorant', serif;
+  font-size: 80px;
+}
+
+/* UTILITY CLASSES */
+.v-align-center {
+  height: 100%;
+  padding: 5% 0;
+}
+
+.side-text {
+  width: 50%;
+  max-height: 100%;
+  text-align: center;
+}
+
+.two-col-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.side-image {
+  width: 50%;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+#logo {
+  width: 200px;
+}
+
+/* INTRO SECTION */
+#intro-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+hr {
+  border-top: 1px solid #7b00a9;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* QUOTE BOX SECTION */
+#quote-box-container {
+  background-color: #fff;
+  margin-top: 50px;
+  min-height: 20rem;
+  max-height: 40rem;
+  padding-bottom: 75px;
+}
+
+#quote-box {
+  font-size: 2rem;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+#blue-flower-container {
+  text-align: center;
+}
+
+#blue-flower {
+  margin-top: 50px;
+  height: 45px;
+  width: 45px;
+}
+
+.bld-font {
+  font-weight: 600;
+}
+
+/* ABOUT SECTION */
+#about {
+  text-align: center;
+}
+
+.about-row {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.about-section {
+  flex: 1;
+  margin: 50px;
+  font-weight: 200;
+}
+
+.about-header {
+  margin: 3rem 0;
+  font-family: 'Cormorant', serif;
+  font-size: 2rem;
+}
+
+.about-image {
+  width: 100px;
+}
+
+.blue-flower-container {
+  text-align: center;
+}
+
+.blue-flower {
+  height: 45px;
+  width: 45px;
+}
+
+/* FACILITY */
+#facility-container {
+  text-align: center;
+}
+
+#training-image {
+  max-height: 216px;
+  width: 100%;
+  padding-right: 15px;
+  object-fit: contain;
+}
+
+.left {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.side-image--20 {
+  width: 20%;
+}
+
+.side-text--80 {
+  padding: 15px;
+  width: 80%;
+}
+
+/* TESTIMONIALS */
+#testimonial-container {
+  margin-top: 50px;
+  height: 100%;
+}
+
+.testimonial-row {
+  display: flex;
+}
+
+.testimonial-box {
+  flex: 1;
+  width: 40%;
+  background-color: #fff;
+  margin: 15px;
+  padding: 25px;
+}
+
+.testimonial {
+  height: 100%;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1201px) {
+  h2 {
+    font-size: 200%;
+  }
+  .lt-font,
+  .bld-font {
+    font-size: 150%;
+  }
+}
+
+/* SCREENS SMALLER THAN LARGE */
+@media (max-width: 992px) {
+  .about-row,
+  .two-col-container,
+  .testimonial-row {
+    display: block;
+  }
+
+  .side-image,
+  .side-text,
+  .testimonial-box {
+    width: 100%;
+  }
+
+  .testimonial-box {
+    margin: 15px 0;
+  }
+
+  .lg-font {
+    font-size: 50px;
+  }
+}
